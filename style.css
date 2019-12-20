@@ -5,9 +5,8 @@
     font-family: helvetica;
 }
 section{
-    width: 500px;
-    height: auto;
-
+    max-width: 500px;
+    min-height: 50vh;
 }
 
 .mainnav ul{
@@ -43,14 +42,23 @@ section {
     top: 100px;
     left: 440px;
 }
+.searchbox i{
+    position: relative;
+    top: 52px;
+    left: -85px;
+    z-index: 2;
+    color: rgb(192, 184, 184);
+    
+}
 #searchfield{
-    border: 1px solid rgb(230, 223, 223);
+    border: 1px solid rgba(230, 223, 223);
     height: 40px;
     width: 500px;
     border-radius: 20px;
     position: relative;
     top: 20px;
     right: 100px;
+    z-index: 1;
 }
 .contentbutton{
     position: relative;
@@ -66,13 +74,16 @@ section {
    border: 1px solid rgb(250, 246, 246);
   
 }
+.contentbutton :hover{
+    border: 1px solid rgb(190, 190, 190);
+    color: rgb(77, 75, 75);
+}
 /*    section  */
 
 
 footer{
    
     margin-top: 330px;
-    
     
     
 }
@@ -128,6 +139,7 @@ footer p{
 .nav2 li a:hover{
     text-decoration: underline;
 }
+
 
 
 
